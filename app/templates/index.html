@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+{% for index in posts %}
+        <a href="#">{{index.atitle.body}}</a>
+        <div>
+            -- {{index.author.nickname}}
+        </div><br>
+{% endfor %}
+{% endblock %}
